@@ -3,7 +3,7 @@ using namespace std;
 
 class Solution {
 public:
-    bool canFinish(int numCourses, vector<pair<int, int>>& prerequisites) {
+	bool canFinish(int numCourses, vector<pair<int, int>>& prerequisites) {
 		queue<int> cl;
 		int* deg = new int[numCourses];
 		vector<int>* edge = new vector<int>[numCourses];
@@ -37,5 +37,5 @@ public:
 			}
 		}
 		return fin == numCourses;
-    }
+	}
 };
