@@ -15,7 +15,7 @@ f[i][j]=
 \begin{cases}
 0,& i=0 \lor j=0\\
 1,& (i,j)=(1,1)\\
-f[i][j],& a[i-1][j-1]=0\\
+f[i][j-1]+f[i-1][j],& a[i-1][j-1]=0\\
 0, &a[i-1][j-1]=1
 \end{cases}
 \end{equation*}
